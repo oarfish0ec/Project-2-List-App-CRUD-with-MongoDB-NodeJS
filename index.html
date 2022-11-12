@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="page">
+    <!-- header -->
+
+    <header>
+      <h1>
+        Fantacy Notice Board
+      </h1>
+      <h2>Find your adventure campanion!</h2>
+      <section class="actions">
+        <!--check script.js to see how this button is activated.-->
+        <button id="addCat">Post Your Character</button>
+      </section>
+    </header>
+
+
+    <!-- fill in area -->
+    <form id="charasheet" action="https://project-2-list-app-crud-with-mongodb-and-nodejs.av0cado.repl.co/api/characters/" method="POST">
+      <input type="hidden" name="_id">
+      <h2>Your Character</h2>
+      <fieldset class="textElement">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="The Adventurer">
+      </fieldset>
+      <!--       //// -->
+
+
+      <fieldset class="textElement">
+        <label for="race">Race</label>
+        <select name="race" id="race">
+          <option value="Elf">Elf</option>
+          <option value="Orc">Orc</option>
+          <option value="Giant">Giant</option>
+          <option value="Dwarf">Dwarf</option>
+          <option value="Human">Human</option>
+          <option value="Goblin">Goblin</option>
+          <option value="Dragon">Dragon</option>
+          <option value="Undead">Undead</option>
+          <option value="Elemntal">Elemntal</option>
+        </select>
+      </fieldset>
+
+      <!--       //// -->
+
+      <fieldset class="textElement">
+        <label for="occupation">Job Class</label>
+        <select name="jobClass" id="occupation">
+          <option value="Mage">Mage</option>
+          <option value="Rogue">Rogue</option>
+          <option value="Cleric">Cleric</option>
+          <option value="Knight">Knight</option>
+          <option value="Ranger">Ranger</option>
+          <option value="Barbarian">Barbarian</option>
+        </select>
+      </fieldset>
+      <!--       //// -->
+
+      <fieldset class="numberElement">
+        <label for="str">STR</label>
+        <input type="number" name="strength" id="str" min="0" max="100">
+      </fieldset>
+
+      <fieldset class="numberElement">
+        <label for="int">INT</label>
+        <input type="number" name="intelligence" id="int" min="0" max="100">
+      </fieldset>
+
+      <fieldset class="numberElement">
+        <label for="agi">AGI</label>
+        <input type="number" name="agility" id="agi" min="0" max="100">
+      </fieldset>
+
+      <fieldset class="numberElement">
+        <label for="luck">Luck</label>
+        <input type="number" name="luck" id="luck" min="0" max="100">
+      </fieldset>
+      <!--       //// -->
+
+      <fieldset class="textareaElement">
+        <label for="description">Description</label>
+        <textarea name="description" id="description" rows="4" cols="30">
+        </textarea>
+      </fieldset>
+      <!--       //// -->
+
+      <div class="lineBreak"></div>
+      <fieldset class="buttonElement">
+<!--         <button class="save">Save</button> -->
+        <input type="submit" class="save" value="Save" />
+      </fieldset>
+      <!--       //// -->
+
+      <fieldset class="buttonElement">
+        <button class="cancel">Cancel</button>
+      </fieldset>
+      <!--       //// -->
+
+    </form>
+
+  </div>
+  <!--   page2 -->
+
+  <div class="secPage">
+    
+  </div>
+  <script src="script.js"></script>
+  <script src="button.js"></script>
+<!--   <script src="script.js"></script>
+ -->
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</body>
+
+</html>

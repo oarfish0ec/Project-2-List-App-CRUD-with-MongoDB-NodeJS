@@ -1,0 +1,142 @@
+html, body {
+  height: 100%;
+  width: 100%; 
+  margin: 0;
+}
+
+html, body,  button, input, textarea, select{
+font-family: 'VT323', monospace;
+  font-size: 20px; 
+}
+
+#page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
+
+h1, h2, h3 { 
+  font-weight: 700;  
+  text-align: center;
+    font-size: 40px; 
+} 
+
+header{
+ margin: 0 auto; 
+ text-align: center;
+}
+
+header h1 {
+  font-size: 80px; 
+  text-align: center;
+}
+header p{
+  max-width:  42rem;
+  margin-bottom: 3rem;
+}
+
+button{
+ border: 0; 
+  font-weight: 700;  
+  background-color: #12c480;  
+  padding: 0.5rem 1rem;
+
+  color: white;
+  cursor: pointer;
+  box-shadow:   -5px 0 0 0 black,
+                 5px 0 0 0 black,
+                 0 -5px 0 0 black,
+                 0 5px 0 0 black;
+} 
+ 
+
+footer {
+  text-align: center;
+  padding: 3rem;
+}
+
+  
+/*====================*/
+
+/* Form Layout */
+#charasheet{
+      font-size: 30px; 
+  text-align: center;
+
+  display: flex;
+/*   width:30%; */
+  margin: 0 10vw;
+  max-width: 60rem; 
+  flex-wrap:wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 4rem; 
+  background: #ededed;
+  padding: 2rem;
+  box-shadow:   -5px 0 0 0 black,
+                 5px 0 0 0 black,
+                 0 -5px 0 0 black,
+                 0 5px 0 0 black;
+/*   filter: drop-shadow(0 0 1rem #ccc); */
+}
+#charasheet h2{
+  width: 100%;
+  text-align: center;
+}
+#charasheet fieldset{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  border: none;
+}
+/* Layout is a bit different for checkboxes and range sliders. */
+#charasheet fieldset.numberElement{
+    display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+#charasheet fieldset.rangeElement{
+  justify-content: center;  
+}
+
+/* Styling for form elements */
+#charasheet input {
+  padding: 0.5rem 1rem;
+  border:1px;
+  box-shadow:   -3px 0 0 0 black,
+                 3px 0 0 0 black,
+                 0 -3px 0 0 black,
+                 0 3px 0 0 black;
+}
+#charasheet input#color {
+  padding: 0;
+}
+#charasheet textarea{
+  padding: 1rem;
+    border:1px;
+
+    box-shadow:   -3px 0 0 0 black,
+                 3px 0 0 0 black,
+                 0 -3px 0 0 black,
+                 0 3px 0 0 black;
+}
+#charasheet select{ 
+  padding: 0.5rem 1rem;
+    border:1px;
+
+    box-shadow:   -3px 0 0 0 black,
+                 3px 0 0 0 black,
+                 0 -3px 0 0 black,
+                 0 3px 0 0 black;
+}
+#charasheet option  {
+  color: black;
+}
+#charasheet option span{ 
+  padding: 0.5rem 1rem;
+}
+/* force the buttons to appear on their own line. */
+#charasheet .lineBreak{
+  width: 100%;
+}
